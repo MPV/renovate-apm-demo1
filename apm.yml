@@ -5,6 +5,6 @@ author: MPV
 targets: [claude, copilot]
 dependencies:
   apm:
-  - mattpocock/skills/skills/engineering/domain-modeling#v1.0.0
+  - mattpocock/skills/skills/engineering/domain-modeling#v1.2.3
   mcp: []
 scripts: {}
