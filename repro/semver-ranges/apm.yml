@@ -1,0 +1,10 @@
+name: repro-semver-ranges
+version: 1.0.0
+description: Dependencies pinned to semver ranges, which APM resolves against tags
+dependencies:
+  apm:
+  - mattpocock/skills/skills/engineering/domain-modeling#~1.0.0
+  - mattpocock/skills/skills/engineering/domain-modeling#1.0.x
+  # Starts like a range, but APM rejects it: every version in a range needs x.y.z
+  - mattpocock/skills/skills/engineering/domain-modeling#~1.0
+  mcp: []
