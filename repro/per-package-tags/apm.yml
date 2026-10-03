@@ -1,0 +1,13 @@
+name: repro-per-package-tags
+version: 1.0.0
+description: Dependencies pinned to per-package tags of a monorepo
+dependencies:
+  apm:
+  # Tagged as <name>--v<version>, as `claude plugin tag` creates
+  - MPV/renovate-apm-demo1/fixtures/monorepo/skills/code-review#code-review--v1.0.0
+  - MPV/renovate-apm-demo1/fixtures/monorepo/skills/triage#triage--v1.0.0
+  # Tagged as <name>-v<version>, as release-please creates
+  - MPV/renovate-apm-demo1/fixtures/monorepo/skills/release-notes#release-notes-v1.0.0
+  # Pinned to the commit of a per-package tag, with the tag kept in a comment
+  - MPV/renovate-apm-demo1/fixtures/monorepo/skills/code-review#4e597c243c27fe5ec960db4ae4ec69b5e85c4570 # code-review--v1.0.0
+  mcp: []
