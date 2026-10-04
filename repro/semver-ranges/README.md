@@ -5,6 +5,10 @@ satisfies it. [mattpocock/skills](https://github.com/mattpocock/skills) tags its
 releases `v<version>`. The Dependency Dashboard here shows `v1.2.3` as its
 newest.
 
+The entries pin the repository itself rather than the skill the root `apm.yml`
+uses, so Renovate's update for them gets its own branch instead of joining the
+root's.
+
 ## What current Renovate does
 
 When a range no longer covers the newest tag, it replaces the range with that
