@@ -4,7 +4,7 @@ description: Dependencies given as clone URLs instead of the owner/repo shorthan
 dependencies:
   apm:
   # Three spellings of the same repository, one per clone URL form APM accepts
-  - https://github.com/mattpocock/skills.git#v1.0.0
-  - git@github.com:mattpocock/skills.git#v1.0.0
-  - ssh://git@github.com/mattpocock/skills.git#v1.0.0
+  - https://github.com/microsoft/apm.git#v0.30.0
+  - git@github.com:microsoft/apm.git#v0.30.0
+  - ssh://git@github.com/microsoft/apm.git#v0.30.0
   mcp: []
