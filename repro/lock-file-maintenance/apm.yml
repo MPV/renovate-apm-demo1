@@ -1,0 +1,9 @@
+name: repro-lock-file-maintenance
+version: 1.0.0
+description: A range pin that lock file maintenance can move
+targets: [claude, copilot]
+dependencies:
+  apm:
+  # The root apm.yml's skill, written with its host so Renovate names it differently
+  - github.com/mattpocock/skills/skills/engineering/domain-modeling#^1.0.0
+  mcp: []
