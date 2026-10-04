@@ -10,7 +10,7 @@ README saying what current Renovate does and what the proposed fix changes.
 | [`semver-ranges`](semver-ranges/) | Semver range refs (`#~0.30.0`) are replaced by a literal tag. | [MPV/renovate#16](https://github.com/MPV/renovate/pull/16) |
 | [`object-form`](object-form/) | Object-form entries (`git:` with `ref:`) are dropped. | [MPV/renovate#13](https://github.com/MPV/renovate/pull/13), [MPV/renovate#18](https://github.com/MPV/renovate/pull/18) |
 | [`clone-urls`](clone-urls/) | Clone URL and SSH entries are looked up under a broken package name, or skipped. | [MPV/renovate#17](https://github.com/MPV/renovate/pull/17) |
-| [`lock-file-maintenance`](lock-file-maintenance/) | Lock file maintenance deletes `apm.lock.yaml` before running `apm install`. | [MPV/renovate#6](https://github.com/MPV/renovate/pull/6) |
+| [`lock-file-maintenance`](lock-file-maintenance/) | Lock file maintenance deletes `apm.lock.yaml` before running `apm install`, which loses APM's record of the deployed files and, when a ref moves, leaves them at the old version. | [MPV/renovate#6](https://github.com/MPV/renovate/pull/6) |
 
 The cases that need a repository tagged `v<version>` use APM's own,
 [microsoft/apm](https://github.com/microsoft/apm). None of the bugs is specific
