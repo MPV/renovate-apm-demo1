@@ -29,8 +29,8 @@ Compare Renovate's PR #1, which moves the root to `v1.2.3` with a normal
 
 ## What the fix does
 
-[MPV/renovate#6](https://github.com/MPV/renovate/pull/6) runs `apm update --yes`
-instead, without deleting the lockfile. The root has nothing to move, so
+[MPV/renovate#6](https://github.com/MPV/renovate/pull/6) runs
+`apm install --update` instead, without deleting the lockfile. The root has nothing to move, so
 nothing changes there. This directory moves to `v1.2.3`, gets
 `agents/openai.yaml` in both `.claude/` and `.agents/`, and its ledger gains the
 two new files. `apm.yml` isn't touched.
