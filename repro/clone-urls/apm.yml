@@ -1,0 +1,10 @@
+name: repro-clone-urls
+version: 1.0.0
+description: Dependencies given as clone URLs instead of the owner/repo shorthand
+dependencies:
+  apm:
+  # Three spellings of the same repository, one per clone URL form APM accepts
+  - https://github.com/microsoft/apm.git#v0.30.0
+  - git@github.com:microsoft/apm.git#v0.30.0
+  - ssh://git@github.com/microsoft/apm.git#v0.30.0
+  mcp: []
