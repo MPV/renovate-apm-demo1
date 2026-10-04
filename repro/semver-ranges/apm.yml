@@ -3,8 +3,8 @@ version: 1.0.0
 description: Dependencies pinned to semver ranges, which APM resolves against tags
 dependencies:
   apm:
-  - mattpocock/skills#~1.0.0
-  - mattpocock/skills#1.0.x
+  - microsoft/apm/packages/apm-guide#~0.30.0
+  - microsoft/apm/packages/apm-guide#0.30.x
   # Starts like a range, but APM rejects it: every version in a range needs x.y.z
-  - mattpocock/skills#~1.0
+  - microsoft/apm/packages/apm-guide#~0.30
   mcp: []
