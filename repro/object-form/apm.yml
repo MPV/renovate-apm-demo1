@@ -4,7 +4,7 @@ description: Dependencies in APM's object form
 dependencies:
   apm:
   # A git repository, with the subdirectory in `path` and the tag in `ref`
-  - git: https://github.com/mattpocock/skills.git
+  - git: https://github.com/mattpocock/skills
     path: skills/engineering/domain-modeling
     ref: v1.0.0
   # A plugin from a marketplace registered with `apm marketplace add`
