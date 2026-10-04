@@ -6,7 +6,7 @@ README saying what current Renovate does and what the proposed fix changes.
 
 | Case | What it shows | Proposed fix |
 |---|---|---|
-| [`per-package-tags`](per-package-tags/) | Dependencies pinned to per-package tags (`code-review--v1.0.0`) get no updates. | [MPV/renovate#14](https://github.com/MPV/renovate/pull/14), [MPV/renovate#15](https://github.com/MPV/renovate/issues/15) |
+| [`per-package-tags`](per-package-tags/) | Dependencies pinned to per-package tags (`documentation-plugin-v1.12.0`) get no updates. | [MPV/renovate#14](https://github.com/MPV/renovate/pull/14), [MPV/renovate#15](https://github.com/MPV/renovate/issues/15) |
 | [`semver-ranges`](semver-ranges/) | Semver range refs (`#~1.0.0`) are replaced by a literal tag. | [MPV/renovate#16](https://github.com/MPV/renovate/pull/16) |
 | [`object-form`](object-form/) | Object-form entries (`git:` with `ref:`) are dropped. | [MPV/renovate#13](https://github.com/MPV/renovate/pull/13), [MPV/renovate#18](https://github.com/MPV/renovate/pull/18) |
 | [`clone-urls`](clone-urls/) | Clone URL and SSH entries are looked up under a broken package name, or skipped. | [MPV/renovate#17](https://github.com/MPV/renovate/pull/17) |
