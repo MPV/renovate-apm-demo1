@@ -2,15 +2,5 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended"
-  ],
-  "packageRules": [
-    {
-      "description": "Keep each reproduction under repro/ on its own branches, apart from the others and from the root apm.yml",
-      "matchFileNames": [
-        "repro/**"
-      ],
-      "additionalBranchPrefix": "{{parentDir}}-",
-      "commitMessageTopic": "{{depName}} ({{parentDir}})"
-    }
   ]
 }

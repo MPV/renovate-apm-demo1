@@ -14,11 +14,14 @@ README saying what current Renovate does and what the proposed fix changes.
 
 ## How Renovate runs here
 
-The Mend Renovate app runs on `master` and reports on the
-[Dependency Dashboard](https://github.com/MPV/renovate-apm-demo1/issues/2). Each
-`apm.yml` is its own package file there. The rule in `renovate.json` gives the
-updates for each directory under `repro/` their own branches and PR titles, so
-they don't mix with each other or with the root `apm.yml`.
+The Mend Renovate app runs the latest Renovate release on `master` and reports
+on the [Dependency Dashboard](https://github.com/MPV/renovate-apm-demo1/issues/2).
+Each `apm.yml` is its own package file there.
+
+Each case is its own PR and can be merged on its own, in any order. The cases
+use dependency names that differ from each other and from the root `apm.yml`,
+so Renovate keeps their updates on separate branches without any extra
+configuration.
 
 Renovate's PRs for these directories are part of the reproduction. Close them
 rather than merging them, or the reproduction is gone.
