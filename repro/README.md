@@ -7,10 +7,15 @@ README saying what current Renovate does and what the proposed fix changes.
 | Case | What it shows | Proposed fix |
 |---|---|---|
 | [`per-package-tags`](per-package-tags/) | Dependencies pinned to per-package tags (`documentation-plugin-v1.12.0`) get no updates. | [MPV/renovate#14](https://github.com/MPV/renovate/pull/14), [MPV/renovate#15](https://github.com/MPV/renovate/issues/15) |
-| [`semver-ranges`](semver-ranges/) | Semver range refs (`#~1.0.0`) are replaced by a literal tag. | [MPV/renovate#16](https://github.com/MPV/renovate/pull/16) |
+| [`semver-ranges`](semver-ranges/) | Semver range refs (`#~0.30.0`) are replaced by a literal tag. | [MPV/renovate#16](https://github.com/MPV/renovate/pull/16) |
 | [`object-form`](object-form/) | Object-form entries (`git:` with `ref:`) are dropped. | [MPV/renovate#13](https://github.com/MPV/renovate/pull/13), [MPV/renovate#18](https://github.com/MPV/renovate/pull/18) |
 | [`clone-urls`](clone-urls/) | Clone URL and SSH entries are looked up under a broken package name, or skipped. | [MPV/renovate#17](https://github.com/MPV/renovate/pull/17) |
 | [`lock-file-maintenance`](lock-file-maintenance/) | Lock file maintenance deletes `apm.lock.yaml` before running `apm install`. | [MPV/renovate#6](https://github.com/MPV/renovate/pull/6) |
+
+The cases that need a repository tagged `v<version>` use APM's own,
+[microsoft/apm](https://github.com/microsoft/apm). None of the bugs is specific
+to it, or to mattpocock/skills, the root `apm.yml`'s dependency, which only the
+lock file maintenance case uses.
 
 ## How Renovate runs here
 
