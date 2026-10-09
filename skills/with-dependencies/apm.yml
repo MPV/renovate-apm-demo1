@@ -1,0 +1,6 @@
+name: with-dependencies
+version: 1.0.0
+description: A test skill with an APM dependency of its own
+dependencies:
+  apm:
+    - mattpocock/skills/skills/productivity/grill-me#v1.0.0
