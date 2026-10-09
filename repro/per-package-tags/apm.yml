@@ -1,0 +1,11 @@
+name: repro-per-package-tags
+version: 1.0.0
+description: Dependencies pinned to per-package tags of a plugin monorepo
+dependencies:
+  apm:
+  # laurigates/claude-plugins releases each plugin separately with release-please,
+  # tagged <plugin>-v<version>
+  - laurigates/claude-plugins/documentation-plugin#documentation-plugin-v1.12.0
+  - laurigates/claude-plugins/configure-plugin#configure-plugin-v1.35.1
+  - laurigates/claude-plugins/project-plugin#project-plugin-v1.21.7
+  mcp: []
